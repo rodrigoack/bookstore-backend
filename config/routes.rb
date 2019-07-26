@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         resources :books
       end
 
-      root to: 'authors#index'
+      resource :auth, only: [:create]
     end
   end
 end
